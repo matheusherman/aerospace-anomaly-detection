@@ -1,0 +1,9 @@
+Part name: Val10
+Part thickness is: 1.5 mm
+
+web (ID: 1; Position point:(0,0,0); Position normal:(0,1,0))
+attachment hole (ID: 2; Parent ID: 1; Diameter: 4 mm; Position point:(0,0,-22.097); Position normal:(0,1,0))
+attachment hole (ID: 3; Parent ID: 1; Diameter: 4 mm; Position point:(-15.783,0,0); Position normal:(0,1,0))
+attachment hole (ID: 4; Parent ID: 1; Diameter: 4 mm; Position point:(0,0,22.097); Position normal:(0,1,0))
+attachment hole (ID: 5; Parent ID: 1; Diameter: 4 mm; Position point:(0,0,0); Position normal:(0,1,0))
+attachment hole (ID: 6; Parent ID: 1; Diameter: 4 mm; Position point:(15.783,0,0); Position normal:(0,1,0))

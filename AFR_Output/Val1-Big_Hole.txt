@@ -1,0 +1,16 @@
+Part name: Val1-Big_Hole
+Part thickness is: 1.5 mm
+
+web (ID: 1; Position point:(-30,-20,0); Position normal:(0,0,1))
+stiffening flange (ID: 2; Parent ID: 1; Width: 60.21 mm; Length: 12.5 mm; Bend radius: 3 mm; Type: Down, Single, Immediate, Planar, Perpendicular; Position point:(-60,-40,0); Position normal:(0.083,-0.997,0))
+corner (ID: 4; Parent ID: 2; Radius: 7.5 mm)
+corner (ID: 5; Parent ID: 2; Radius: 10.5 mm)
+attachment flange (ID: 3; Parent ID: 1; Width: 60 mm; Length: 17.5 mm; Bend radius: 3 mm; Type: Down, Single, Immediate, Planar, Perpendicular; Position point:(0,0,0); Position normal:(0,1,0))
+corner (ID: 6; Parent ID: 3; Radius: 7.5 mm)
+corner (ID: 7; Parent ID: 3; Radius: 7.5 mm)
+corner (ID: 8; Parent ID: 3; Radius: 7.5 mm)
+attachment hole (ID: 12; Parent ID: 3; Diameter: 4 mm; Position point:(-7.5,0,10); Position normal:(0,-1,0))
+attachment hole (ID: 13; Parent ID: 3; Diameter: 4 mm; Position point:(-27.5,0,10); Position normal:(0,-1,0))
+attachment hole (ID: 9; Parent ID: 1; Diameter: 4 mm; Position point:(-52.5,-27.5,0); Position normal:(0,0,1))
+attachment hole (ID: 10; Parent ID: 1; Diameter: 4 mm; Position point:(-52.5,-12.5,0); Position normal:(0,0,1))
+tooling hole (ID: 11; Parent ID: 1; Diameter: 10 mm; Position point:(-7.5,-12.5,0); Position normal:(0,0,1))

@@ -1,0 +1,2447 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="file://TCC.owl"
+         xmlns="file://TCC.owl#"
+         xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+         xmlns:swrl2="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+
+<owl:Ontology rdf:about="file://TCC.owl"/>
+
+<owl:ObjectProperty rdf:about="#isChildof">
+  <owl:inverseOf rdf:resource="#isParentOf"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isParentOf"/>
+
+<owl:ObjectProperty rdf:about="#recommendedMachine"/>
+
+<owl:ObjectProperty rdf:about="#recommendedScrew"/>
+
+<owl:DatatypeProperty rdf:about="#hasAngle">
+  <rdfs:domain rdf:resource="#Lightening_Hole"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasBend_Radius">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasBend_Radius_1">
+  <rdfs:subPropertyOf rdf:resource="#hasBend_Radius"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasBend_Radius_2">
+  <rdfs:subPropertyOf rdf:resource="#hasBend_Radius"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasBending_Area"/>
+
+<owl:DatatypeProperty rdf:about="#hasBending_Capacity"/>
+
+<owl:DatatypeProperty rdf:about="#hasClearance_Diameter">
+  <rdfs:domain rdf:resource="#Lightening_Hole"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasCompression_Force"/>
+
+<owl:DatatypeProperty rdf:about="#hasDeformation_Length">
+  <rdfs:domain rdf:resource="#Deformed_Flange"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasDepth">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasDepth_Direction_X">
+  <rdfs:subPropertyOf rdf:resource="#hasDepth"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasDepth_Direction_Y">
+  <rdfs:subPropertyOf rdf:resource="#hasDepth"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasDepth_Direction_Z">
+  <rdfs:subPropertyOf rdf:resource="#hasDepth"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasDiameter">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasDimension_X"/>
+
+<owl:DatatypeProperty rdf:about="#hasDimension_Y"/>
+
+<owl:DatatypeProperty rdf:about="#hasDimension_Z"/>
+
+<owl:DatatypeProperty rdf:about="#hasDrilling_Capacity"/>
+
+<owl:DatatypeProperty rdf:about="#hasEnd_Mill_Capacity"/>
+
+<owl:DatatypeProperty rdf:about="#hasHeight">
+  <rdfs:domain rdf:resource="#Lightening_Hole"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasID">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasLength">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasMilling_Speed"/>
+
+<owl:DatatypeProperty rdf:about="#hasMinimum_Bending_Radius">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasName">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasOuter_Diameter">
+  <rdfs:domain rdf:resource="#Lightening_Hole"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasParentID">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasPosition_Normal_X">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasPosition_Normal_Y">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasPosition_Normal_Z">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasPosition_Point_X">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasPosition_Point_Y">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasPosition_Point_Z">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasProfile">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasRadius">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasRunout">
+  <rdfs:domain rdf:resource="#Joggle"/>
+  <rdfs:domain rdf:resource="#Twin_Joggle"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasRunout_Direction_X">
+  <rdfs:subPropertyOf rdf:resource="#hasRunout"/>
+  <rdfs:domain rdf:resource="#Joggle"/>
+  <rdfs:domain rdf:resource="#Twin_Joggle"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasRunout_Direction_Y">
+  <rdfs:subPropertyOf rdf:resource="#hasRunout"/>
+  <rdfs:domain rdf:resource="#Joggle"/>
+  <rdfs:domain rdf:resource="#Twin_Joggle"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasRunout_Direction_Z">
+  <rdfs:subPropertyOf rdf:resource="#hasRunout"/>
+  <rdfs:domain rdf:resource="#Joggle"/>
+  <rdfs:domain rdf:resource="#Twin_Joggle"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasThickness">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasTilt_Capacity"/>
+
+<owl:DatatypeProperty rdf:about="#hasType">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasWidth">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#recommendedSpeed">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+
+<owl:Class rdf:about="#Lightening_Hole">
+  <rdfs:subClassOf rdf:resource="#Refinement_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Deformed_Flange">
+  <rdfs:subClassOf rdf:resource="#Contact_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Joggle">
+  <rdfs:subClassOf rdf:resource="#Contact_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Twin_Joggle">
+  <rdfs:subClassOf rdf:resource="#Contact_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Refinement_Features">
+  <rdfs:subClassOf rdf:resource="#Product_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Contact_Features">
+  <rdfs:subClassOf rdf:resource="#Product_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Product_Features">
+  <rdfs:subClassOf rdf:resource="#Product_Data"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Product_Data">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Attachment_Flange">
+  <rdfs:subClassOf rdf:resource="#Contact_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Attachment_Hole">
+  <rdfs:subClassOf rdf:resource="#Contact_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Base_Features">
+  <rdfs:subClassOf rdf:resource="#Product_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bead">
+  <rdfs:subClassOf rdf:resource="#Refinement_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bend_Relief">
+  <rdfs:subClassOf rdf:resource="#Refinement_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bending_Machine">
+  <rdfs:subClassOf rdf:resource="#Machine_Data"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Machine_Data"/>
+
+<owl:Class rdf:about="#Corner">
+  <rdfs:subClassOf rdf:resource="#Refinement_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Cutout">
+  <rdfs:subClassOf rdf:resource="#Refinement_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Deformed_Web">
+  <rdfs:subClassOf rdf:resource="#Contact_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Drilling_Machine">
+  <rdfs:subClassOf rdf:resource="#Machine_Data"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lightening_Cutout">
+  <rdfs:subClassOf rdf:resource="#Refinement_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lip">
+  <rdfs:subClassOf rdf:resource="#Refinement_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milling_Machine">
+  <rdfs:subClassOf rdf:resource="#Machine_Data"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part_Area">
+  <rdfs:subClassOf rdf:resource="#Part_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part_Features">
+  <rdfs:subClassOf rdf:resource="#Product_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part_Name">
+  <rdfs:subClassOf rdf:resource="#Part_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part_Perimeter">
+  <rdfs:subClassOf rdf:resource="#Part_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part_Thickness">
+  <rdfs:subClassOf rdf:resource="#Part_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part_Weight">
+  <rdfs:subClassOf rdf:resource="#Part_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Screws">
+  <rdfs:subClassOf rdf:resource="#Tooling_Data"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tooling_Data"/>
+
+<owl:Class rdf:about="#Stiffening_Flange">
+  <rdfs:subClassOf rdf:resource="#Refinement_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Stringer_Cutout">
+  <rdfs:subClassOf rdf:resource="#Refinement_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tooling_Hole">
+  <rdfs:subClassOf rdf:resource="#Refinement_Features"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Web">
+  <rdfs:subClassOf rdf:resource="#Base_Features"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#Bending_Machine_1">
+  <rdf:type rdf:resource="#Bending_Machine"/>
+  <hasBending_Area rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1828.8</hasBending_Area>
+  <hasBending_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.5</hasBending_Capacity>
+  <hasCompression_Force rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120.0</hasCompression_Force>
+  <hasMinimum_Bending_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasMinimum_Bending_Radius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bending_Machine_2">
+  <rdf:type rdf:resource="#Bending_Machine"/>
+  <hasBending_Area rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1521.3</hasBending_Area>
+  <hasBending_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.7</hasBending_Capacity>
+  <hasCompression_Force rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250.0</hasCompression_Force>
+  <hasMinimum_Bending_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.25</hasMinimum_Bending_Radius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bending_Machine_3">
+  <rdf:type rdf:resource="#Bending_Machine"/>
+  <hasBending_Area rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">914.4</hasBending_Area>
+  <hasBending_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.4</hasBending_Capacity>
+  <hasCompression_Force rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">312.5</hasCompression_Force>
+  <hasMinimum_Bending_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</hasMinimum_Bending_Radius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CNC_Z3032_Radial">
+  <rdf:type rdf:resource="#Drilling_Machine"/>
+  <hasDimension_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1400.0</hasDimension_X>
+  <hasDimension_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">660.0</hasDimension_Y>
+  <hasDimension_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2060.0</hasDimension_Z>
+  <hasDrilling_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasDrilling_Capacity>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CNC_Z3050X16_Radial">
+  <rdf:type rdf:resource="#Drilling_Machine"/>
+  <hasDimension_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2500.0</hasDimension_X>
+  <hasDimension_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1060.0</hasDimension_Y>
+  <hasDimension_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2800.0</hasDimension_Z>
+  <hasDrilling_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDrilling_Capacity>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CNC_Z3132_Radial">
+  <rdf:type rdf:resource="#Drilling_Machine"/>
+  <hasDimension_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1800.0</hasDimension_X>
+  <hasDimension_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">700.0</hasDimension_Y>
+  <hasDimension_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2044.0</hasDimension_Z>
+  <hasDrilling_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</hasDrilling_Capacity>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CORREA_FP30-35">
+  <rdf:type rdf:resource="#Milling_Machine"/>
+  <hasDimension_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3500.0</hasDimension_X>
+  <hasDimension_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1600.0</hasDimension_Y>
+  <hasDimension_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">800.0</hasDimension_Z>
+  <hasDrilling_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.1</hasDrilling_Capacity>
+  <hasEnd_Mill_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</hasEnd_Mill_Capacity>
+  <hasMilling_Speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4000.0</hasMilling_Speed>
+  <hasTilt_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.0</hasTilt_Capacity>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#DMG_MORI_DMU_75_MONOBOCK">
+  <rdf:type rdf:resource="#Milling_Machine"/>
+  <hasDimension_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">725.0</hasDimension_X>
+  <hasDimension_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">725.0</hasDimension_Y>
+  <hasDimension_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600.0</hasDimension_Z>
+  <hasDrilling_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67.8</hasDrilling_Capacity>
+  <hasEnd_Mill_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</hasEnd_Mill_Capacity>
+  <hasMilling_Speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</hasMilling_Speed>
+  <hasTilt_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.0</hasTilt_Capacity>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hex_Screw">
+  <rdf:type rdf:resource="#Screws"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasDiameter>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#JOB_MOD_JOMACH23">
+  <rdf:type rdf:resource="#Milling_Machine"/>
+  <hasDimension_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4800.0</hasDimension_X>
+  <hasDimension_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2200.0</hasDimension_Y>
+  <hasDimension_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1200.0</hasDimension_Z>
+  <hasDrilling_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">52.7</hasDrilling_Capacity>
+  <hasEnd_Mill_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.0</hasEnd_Mill_Capacity>
+  <hasMilling_Speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7500.0</hasMilling_Speed>
+  <hasTilt_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.0</hasTilt_Capacity>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MIKRON_VCE_1000_W7">
+  <rdf:type rdf:resource="#Milling_Machine"/>
+  <hasDimension_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1050.0</hasDimension_X>
+  <hasDimension_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600.0</hasDimension_Y>
+  <hasDimension_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600.0</hasDimension_Z>
+  <hasDrilling_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81.0</hasDrilling_Capacity>
+  <hasEnd_Mill_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</hasEnd_Mill_Capacity>
+  <hasMilling_Speed rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">750.0</hasMilling_Speed>
+  <hasTilt_Capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60.0</hasTilt_Capacity>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Self_Drilling_Screw">
+  <rdf:type rdf:resource="#Screws"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</hasDiameter>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sheet_Metal_Screw">
+  <rdf:type rdf:resource="#Screws"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</hasDiameter>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Square_Screw">
+  <rdf:type rdf:resource="#Screws"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</hasDiameter>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole">
+  <rdf:type rdf:resource="#Part_Name"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_1">
+  <rdf:type rdf:resource="#Web"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-30.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_10">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-52.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_11">
+  <rdf:type rdf:resource="#Tooling_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_12">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_13">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-27.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_2">
+  <rdf:type rdf:resource="#Stiffening_Flange"/>
+  <hasBend_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasID>
+  <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasLength>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.083</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.997</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-60.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-40.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+  <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Down, Single, Immediate, Planar, Perpendicular</hasType>
+  <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60.21</hasWidth>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_3">
+  <rdf:type rdf:resource="#Attachment_Flange"/>
+  <hasBend_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasID>
+  <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.5</hasLength>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+  <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60.0</hasWidth>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_4">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_5">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_6">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_7">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_8">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val1-Big_Hole_9">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val1-Big_Hole</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-52.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-27.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20">
+  <rdf:type rdf:resource="#Part_Name"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_1">
+  <rdf:type rdf:resource="#Web"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-3.75</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-100.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_10">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-57.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_11">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-32.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_12">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_13">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-192.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_14">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-175.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_15">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-154.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_16">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-133.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_17">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-112.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_18">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-91.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_19">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-70.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_2">
+  <rdf:type rdf:resource="#Attachment_Flange"/>
+  <hasBend_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasID>
+  <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</hasLength>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-200.0</hasPosition_Point_Z>
+  <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200.0</hasWidth>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_20">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-49.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_21">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-28.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_22">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-20.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_3">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_4">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_5">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-5.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-182.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_6">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-157.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_7">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-132.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_8">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-107.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val20_9">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val20</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-7.5</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-82.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25">
+  <rdf:type rdf:resource="#Part_Name"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_1">
+  <rdf:type rdf:resource="#Web"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_10">
+  <rdf:type rdf:resource="#Attachment_Flange"/>
+  <hasBend_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasID>
+  <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</hasLength>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-75.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+  <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72.4</hasWidth>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_11">
+  <rdf:type rdf:resource="#Joggle"/>
+  <hasBend_Radius_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius_1>
+  <hasBend_Radius_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius_2>
+  <hasDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.12</hasDepth>
+  <hasDepth_Direction_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.999</hasDepth_Direction_X>
+  <hasDepth_Direction_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.0</hasDepth_Direction_Y>
+  <hasDepth_Direction_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasDepth_Direction_Z>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasParentID>
+  <hasRunout rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.77</hasRunout>
+  <hasRunout_Direction_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0496809</hasRunout_Direction_X>
+  <hasRunout_Direction_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasRunout_Direction_Y>
+  <hasRunout_Direction_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.998748</hasRunout_Direction_Z>
+  <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inward</hasType>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_12">
+  <rdf:type rdf:resource="#Deformed_Flange"/>
+  <hasDeformation_Length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.58</hasDeformation_Length>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasParentID>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_14">
+  <rdf:type rdf:resource="#Attachment_Flange"/>
+  <hasBend_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasID>
+  <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</hasLength>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-55.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">155.0</hasPosition_Point_Z>
+  <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97.63</hasWidth>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_15">
+  <rdf:type rdf:resource="#Attachment_Flange"/>
+  <hasBend_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasID>
+  <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.0</hasLength>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+  <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">136.33</hasWidth>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_2">
+  <rdf:type rdf:resource="#Joggle"/>
+  <hasBend_Radius_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius_1>
+  <hasBend_Radius_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius_2>
+  <hasDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.12</hasDepth>
+  <hasDepth_Direction_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.999</hasDepth_Direction_X>
+  <hasDepth_Direction_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.0</hasDepth_Direction_Y>
+  <hasDepth_Direction_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasDepth_Direction_Z>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasParentID>
+  <hasRunout rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.77</hasRunout>
+  <hasRunout_Direction_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.0496809</hasRunout_Direction_X>
+  <hasRunout_Direction_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasRunout_Direction_Y>
+  <hasRunout_Direction_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.998748</hasRunout_Direction_Z>
+  <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inward</hasType>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_20">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_21">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_22">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_23">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_24">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_25">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_26">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_27">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_28">
+  <rdf:type rdf:resource="#Tooling_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-54.501</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_29">
+  <rdf:type rdf:resource="#Tooling_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.451</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">135.5</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_3">
+  <rdf:type rdf:resource="#Deformed_Flange"/>
+  <hasDeformation_Length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.58</hasDeformation_Length>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_30">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55.683</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">141.334</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_31">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71.488</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.245</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_32">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72.187</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56.263</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_33">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72.886</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.28</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_34">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73.585</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.298</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_35">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74.284</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.315</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_36">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">63.668</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">104.149</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_37">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-71.488</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.245</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_38">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-72.187</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56.263</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_39">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-72.886</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.28</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_40">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-73.585</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.298</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_41">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-74.284</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.315</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_42">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-55.683</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">141.334</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_43">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-63.668</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">104.149</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_44">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.317</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">155.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_45">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.683</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">155.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_46">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.317</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">155.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_47">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-21.317</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">155.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_48">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-41.317</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">155.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_49">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-60.667</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_5">
+  <rdf:type rdf:resource="#Joggle"/>
+  <hasBend_Radius_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius_1>
+  <hasBend_Radius_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius_2>
+  <hasDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.12</hasDepth>
+  <hasDepth_Direction_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.999</hasDepth_Direction_X>
+  <hasDepth_Direction_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.0</hasDepth_Direction_Y>
+  <hasDepth_Direction_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasDepth_Direction_Z>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasParentID>
+  <hasRunout rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.77</hasRunout>
+  <hasRunout_Direction_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.0496809</hasRunout_Direction_X>
+  <hasRunout_Direction_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasRunout_Direction_Y>
+  <hasRunout_Direction_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.998748</hasRunout_Direction_Z>
+  <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inward</hasType>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_50">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60.667</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_51">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-60.667</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_52">
+  <rdf:type rdf:resource="#Attachment_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60.667</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32.5</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_6">
+  <rdf:type rdf:resource="#Deformed_Flange"/>
+  <hasDeformation_Length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.58</hasDeformation_Length>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasParentID>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_7">
+  <rdf:type rdf:resource="#Attachment_Flange"/>
+  <hasBend_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasID>
+  <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</hasLength>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.999</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71.0</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80.0</hasPosition_Point_Z>
+  <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72.4</hasWidth>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_8">
+  <rdf:type rdf:resource="#Joggle"/>
+  <hasBend_Radius_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius_1>
+  <hasBend_Radius_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</hasBend_Radius_2>
+  <hasDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.12</hasDepth>
+  <hasDepth_Direction_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.999</hasDepth_Direction_X>
+  <hasDepth_Direction_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.0</hasDepth_Direction_Y>
+  <hasDepth_Direction_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05</hasDepth_Direction_Z>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasParentID>
+  <hasRunout rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.77</hasRunout>
+  <hasRunout_Direction_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0496809</hasRunout_Direction_X>
+  <hasRunout_Direction_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasRunout_Direction_Y>
+  <hasRunout_Direction_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.998748</hasRunout_Direction_Z>
+  <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inward</hasType>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val25_9">
+  <rdf:type rdf:resource="#Deformed_Flange"/>
+  <hasDeformation_Length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.58</hasDeformation_Length>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val25</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasParentID>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit">
+  <rdf:type rdf:resource="#Part_Name"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_1">
+  <rdf:type rdf:resource="#Web"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.436</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.848</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.301</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5330.44</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-289.574</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1684.3</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_10">
+  <rdf:type rdf:resource="#Tooling_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.576</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.006</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.818</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5270.71</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-217.173</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1721.58</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_11">
+  <rdf:type rdf:resource="#Tooling_Hole"/>
+  <hasDiameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.1</hasDiameter>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.805</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.199</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.559</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5308.7</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-283.808</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1726.91</hasPosition_Point_Z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_2">
+  <rdf:type rdf:resource="#Attachment_Flange"/>
+  <hasBend_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</hasBend_Radius>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasID>
+  <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1523060.0</hasLength>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.818</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.576</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5274.05</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-219.379</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1751.51</hasPosition_Point_Z>
+  <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37.53</hasWidth>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_3">
+  <rdf:type rdf:resource="#Attachment_Flange"/>
+  <hasBend_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</hasBend_Radius>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasID>
+  <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.89</hasLength>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.805</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.199</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.559</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5312.79</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-259.746</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1724.23</hasPosition_Point_Z>
+  <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22.0</hasWidth>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_4">
+  <rdf:type rdf:resource="#Attachment_Flange"/>
+  <hasBend_Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</hasBend_Radius>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasID>
+  <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24.01</hasLength>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasPosition_Normal_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.576</hasPosition_Normal_X>
+  <hasPosition_Normal_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.006</hasPosition_Normal_Y>
+  <hasPosition_Normal_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.818</hasPosition_Normal_Z>
+  <hasPosition_Point_X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5258.84</hasPosition_Point_X>
+  <hasPosition_Point_Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-221.266</hasPosition_Point_Y>
+  <hasPosition_Point_Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1729.91</hasPosition_Point_Z>
+  <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22.4</hasWidth>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_5">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_6">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_7">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_8">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</hasRadius>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Val29_edit_9">
+  <rdf:type rdf:resource="#Corner"/>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val29_edit</hasName>
+  <hasParentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasParentID>
+  <hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</hasRadius>
+</owl:NamedIndividual>
+
+<swrl:Variable rdf:about="#attachmentFlange"/>
+
+<swrl:Variable rdf:about="#width"/>
+
+<swrl:Variable rdf:about="#length"/>
+
+<swrl:Variable rdf:about="#area"/>
+
+<swrl:Variable rdf:about="#bendRadius"/>
+
+<swrl:Variable rdf:about="#bendingMachine"/>
+
+<swrl:Variable rdf:about="#bendingCapacity"/>
+
+<swrl:Variable rdf:about="#bending_Area"/>
+
+<swrl:Variable rdf:about="#minimumBendingRadius"/>
+
+<swrl:Variable rdf:about="#at"/>
+
+<swrl:Variable rdf:about="#dm"/>
+
+<swrl:Variable rdf:about="#drilling_diameter"/>
+
+<swrl:Variable rdf:about="#screw"/>
+
+<swrl:Variable rdf:about="#sdiameter"/>
+
+<swrl:Variable rdf:about="#x"/>
+
+<swrl:Variable rdf:about="#radius"/>
+
+<swrl:Variable rdf:about="#machine"/>
+
+<swrl:Variable rdf:about="#mill"/>
+
+<swrl:Variable rdf:about="#tolerance"/>
+
+<swrl:Variable rdf:about="#hole"/>
+
+<swrl:Variable rdf:about="#diameter"/>
+
+<swrl:Variable rdf:about="#piece"/>
+
+<swrl:Variable rdf:about="#outerDiameter"/>
+
+<swrl:Variable rdf:about="#drillingCapacity"/>
+
+<swrl:Variable rdf:about="#angle"/>
+
+<swrl:Variable rdf:about="#tiltCapacity"/>
+
+<swrl:Variable rdf:about="#individuoA"/>
+
+<swrl:Variable rdf:about="#childID"/>
+
+<swrl:Variable rdf:about="#individuoB"/>
+
+<swrl:Variable rdf:about="#parentID"/>
+
+<swrl:Variable rdf:about="#nomeA"/>
+
+<swrl:Variable rdf:about="#nomeB"/>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#Base_Features"/>
+    <rdf:Description rdf:about="#Contact_Features"/>
+    <rdf:Description rdf:about="#Part_Features"/>
+    <rdf:Description rdf:about="#Refinement_Features"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:DatavaluedPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#hasParentID"/>
+          <swrl:argument1 rdf:resource="#individuoA"/>
+          <swrl:argument2 rdf:resource="#childID"/>
+        </swrl:DatavaluedPropertyAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#hasID"/>
+              <swrl:argument1 rdf:resource="#individuoB"/>
+              <swrl:argument2 rdf:resource="#parentID"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="#childID"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:first rdf:resource="#parentID"/>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#hasName"/>
+                      <swrl:argument1 rdf:resource="#individuoA"/>
+                      <swrl:argument2 rdf:resource="#nomeA"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:DatavaluedPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#hasName"/>
+                          <swrl:argument1 rdf:resource="#individuoB"/>
+                          <swrl:argument2 rdf:resource="#nomeB"/>
+                        </swrl:DatavaluedPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:BuiltinAtom>
+                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                              <swrl:arguments>
+                                <rdf:Description>
+                                  <rdf:first rdf:resource="#nomeA"/>
+                                  <rdf:rest>
+                                    <rdf:Description>
+                                      <rdf:first rdf:resource="#nomeB"/>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                  </rdf:rest>
+                                </rdf:Description>
+                              </swrl:arguments>
+                            </swrl:BuiltinAtom>
+                          </rdf:first>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#isParentOf"/>
+          <swrl:argument1 rdf:resource="#individuoB"/>
+          <swrl:argument2 rdf:resource="#individuoA"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:DatavaluedPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#hasID"/>
+          <swrl:argument1 rdf:resource="#x"/>
+          <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+        </swrl:DatavaluedPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Web"/>
+          <swrl:argument1 rdf:resource="#x"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Attachment_Hole"/>
+          <swrl:argument1 rdf:resource="#at"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#Drilling_Machine"/>
+              <swrl:argument1 rdf:resource="#dm"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:IndividualPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#recommendedMachine"/>
+                  <swrl:argument1 rdf:resource="#at"/>
+                  <swrl:argument2 rdf:resource="#dm"/>
+                </swrl:IndividualPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#hasDrilling_Capacity"/>
+                      <swrl:argument1 rdf:resource="#dm"/>
+                      <swrl:argument2 rdf:resource="#drilling_diameter"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:ClassAtom>
+                          <swrl:classPredicate rdf:resource="#Screws"/>
+                          <swrl:argument1 rdf:resource="#screw"/>
+                        </swrl:ClassAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                              <swrl:propertyPredicate rdf:resource="#hasDiameter"/>
+                              <swrl:argument1 rdf:resource="#screw"/>
+                              <swrl:argument2 rdf:resource="#sdiameter"/>
+                            </swrl:DatavaluedPropertyAtom>
+                          </rdf:first>
+                          <rdf:rest>
+                            <swrl:AtomList>
+                              <rdf:first>
+                                <swrl:BuiltinAtom>
+                                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                  <swrl:arguments>
+                                    <rdf:Description>
+                                      <rdf:first rdf:resource="#sdiameter"/>
+                                      <rdf:rest>
+                                        <rdf:Description>
+                                          <rdf:first rdf:resource="#drilling_diameter"/>
+                                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                        </rdf:Description>
+                                      </rdf:rest>
+                                    </rdf:Description>
+                                  </swrl:arguments>
+                                </swrl:BuiltinAtom>
+                              </rdf:first>
+                              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </swrl:AtomList>
+                          </rdf:rest>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#recommendedScrew"/>
+          <swrl:argument1 rdf:resource="#at"/>
+          <swrl:argument2 rdf:resource="#screw"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S7</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Attachment_Flange"/>
+          <swrl:argument1 rdf:resource="#attachmentFlange"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#hasWidth"/>
+              <swrl:argument1 rdf:resource="#attachmentFlange"/>
+              <swrl:argument2 rdf:resource="#width"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:DatavaluedPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#hasLength"/>
+                  <swrl:argument1 rdf:resource="#attachmentFlange"/>
+                  <swrl:argument2 rdf:resource="#length"/>
+                </swrl:DatavaluedPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:BuiltinAtom>
+                      <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#multiply"/>
+                      <swrl:arguments>
+                        <rdf:Description>
+                          <rdf:first rdf:resource="#area"/>
+                          <rdf:rest>
+                            <rdf:Description>
+                              <rdf:first rdf:resource="#length"/>
+                              <rdf:rest>
+                                <rdf:Description>
+                                  <rdf:first rdf:resource="#width"/>
+                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                </rdf:Description>
+                              </rdf:rest>
+                            </rdf:Description>
+                          </rdf:rest>
+                        </rdf:Description>
+                      </swrl:arguments>
+                    </swrl:BuiltinAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:DatavaluedPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#hasBend_Radius"/>
+                          <swrl:argument1 rdf:resource="#attachmentFlange"/>
+                          <swrl:argument2 rdf:resource="#bendRadius"/>
+                        </swrl:DatavaluedPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:ClassAtom>
+                              <swrl:classPredicate rdf:resource="#Bending_Machine"/>
+                              <swrl:argument1 rdf:resource="#bendingMachine"/>
+                            </swrl:ClassAtom>
+                          </rdf:first>
+                          <rdf:rest>
+                            <swrl:AtomList>
+                              <rdf:first>
+                                <swrl:DatavaluedPropertyAtom>
+                                  <swrl:propertyPredicate rdf:resource="#hasBending_Capacity"/>
+                                  <swrl:argument1 rdf:resource="#bendingMachine"/>
+                                  <swrl:argument2 rdf:resource="#bendingCapacity"/>
+                                </swrl:DatavaluedPropertyAtom>
+                              </rdf:first>
+                              <rdf:rest>
+                                <swrl:AtomList>
+                                  <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                      <swrl:propertyPredicate rdf:resource="#hasBending_Area"/>
+                                      <swrl:argument1 rdf:resource="#bendingMachine"/>
+                                      <swrl:argument2 rdf:resource="#bending_Area"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                  </rdf:first>
+                                  <rdf:rest>
+                                    <swrl:AtomList>
+                                      <rdf:first>
+                                        <swrl:DatavaluedPropertyAtom>
+                                          <swrl:propertyPredicate rdf:resource="#hasMinimum_Bending_Radius"/>
+                                          <swrl:argument1 rdf:resource="#bendingMachine"/>
+                                          <swrl:argument2 rdf:resource="#minimumBendingRadius"/>
+                                        </swrl:DatavaluedPropertyAtom>
+                                      </rdf:first>
+                                      <rdf:rest>
+                                        <swrl:AtomList>
+                                          <rdf:first>
+                                            <swrl:BuiltinAtom>
+                                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                              <swrl:arguments>
+                                                <rdf:Description>
+                                                  <rdf:first rdf:resource="#bendRadius"/>
+                                                  <rdf:rest>
+                                                    <rdf:Description>
+                                                      <rdf:first rdf:resource="#minimumBendingRadius"/>
+                                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                  </rdf:rest>
+                                                </rdf:Description>
+                                              </swrl:arguments>
+                                            </swrl:BuiltinAtom>
+                                          </rdf:first>
+                                          <rdf:rest>
+                                            <swrl:AtomList>
+                                              <rdf:first>
+                                                <swrl:BuiltinAtom>
+                                                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                  <swrl:arguments>
+                                                    <rdf:Description>
+                                                      <rdf:first rdf:resource="#bendRadius"/>
+                                                      <rdf:rest>
+                                                        <rdf:Description>
+                                                          <rdf:first rdf:resource="#bendingCapacity"/>
+                                                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                        </rdf:Description>
+                                                      </rdf:rest>
+                                                    </rdf:Description>
+                                                  </swrl:arguments>
+                                                </swrl:BuiltinAtom>
+                                              </rdf:first>
+                                              <rdf:rest>
+                                                <swrl:AtomList>
+                                                  <rdf:first>
+                                                    <swrl:BuiltinAtom>
+                                                      <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                      <swrl:arguments>
+                                                        <rdf:Description>
+                                                          <rdf:first rdf:resource="#area"/>
+                                                          <rdf:rest>
+                                                            <rdf:Description>
+                                                              <rdf:first rdf:resource="#bending_Area"/>
+                                                              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                          </rdf:rest>
+                                                        </rdf:Description>
+                                                      </swrl:arguments>
+                                                    </swrl:BuiltinAtom>
+                                                  </rdf:first>
+                                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                </swrl:AtomList>
+                                              </rdf:rest>
+                                            </swrl:AtomList>
+                                          </rdf:rest>
+                                        </swrl:AtomList>
+                                      </rdf:rest>
+                                    </swrl:AtomList>
+                                  </rdf:rest>
+                                </swrl:AtomList>
+                              </rdf:rest>
+                            </swrl:AtomList>
+                          </rdf:rest>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#recommendedMachine"/>
+          <swrl:argument1 rdf:resource="#attachmentFlange"/>
+          <swrl:argument2 rdf:resource="#bendingMachine"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S6</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Corner"/>
+          <swrl:argument1 rdf:resource="#x"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#hasRadius"/>
+              <swrl:argument1 rdf:resource="#x"/>
+              <swrl:argument2 rdf:resource="#radius"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:ClassAtom>
+                  <swrl:classPredicate rdf:resource="#Milling_Machine"/>
+                  <swrl:argument1 rdf:resource="#machine"/>
+                </swrl:ClassAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#hasEnd_Mill_Capacity"/>
+                      <swrl:argument1 rdf:resource="#machine"/>
+                      <swrl:argument2 rdf:resource="#mill"/>
+                    </swrl:DatavaluedPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:BuiltinAtom>
+                          <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#multiply"/>
+                          <swrl:arguments>
+                            <rdf:List>
+                              <rdf:first rdf:resource="#tolerance"/>
+                              <rdf:rest>
+                                <rdf:List>
+                                  <rdf:first rdf:resource="#radius"/>
+                                  <rdf:rest>
+                                    <rdf:List>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</rdf:first>
+                                    </rdf:List>
+                                  </rdf:rest>
+                                </rdf:List>
+                              </rdf:rest>
+                            </rdf:List>
+                          </swrl:arguments>
+                        </swrl:BuiltinAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:BuiltinAtom>
+                              <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                              <swrl:arguments>
+                                <rdf:Description>
+                                  <rdf:first rdf:resource="#mill"/>
+                                  <rdf:rest>
+                                    <rdf:Description>
+                                      <rdf:first rdf:resource="#radius"/>
+                                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                  </rdf:rest>
+                                </rdf:Description>
+                              </swrl:arguments>
+                            </swrl:BuiltinAtom>
+                          </rdf:first>
+                          <rdf:rest>
+                            <swrl:AtomList>
+                              <rdf:first>
+                                <swrl:BuiltinAtom>
+                                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                  <swrl:arguments>
+                                    <rdf:Description>
+                                      <rdf:first rdf:resource="#mill"/>
+                                      <rdf:rest>
+                                        <rdf:Description>
+                                          <rdf:first rdf:resource="#tolerance"/>
+                                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                        </rdf:Description>
+                                      </rdf:rest>
+                                    </rdf:Description>
+                                  </swrl:arguments>
+                                </swrl:BuiltinAtom>
+                              </rdf:first>
+                              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </swrl:AtomList>
+                          </rdf:rest>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#recommendedMachine"/>
+          <swrl:argument1 rdf:resource="#x"/>
+          <swrl:argument2 rdf:resource="#machine"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine to Corner</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:DatavaluedPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#hasDiameter"/>
+          <swrl:argument1 rdf:resource="#hole"/>
+          <swrl:argument2 rdf:resource="#diameter"/>
+        </swrl:DatavaluedPropertyAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="#Drilling_Machine"/>
+              <swrl:argument1 rdf:resource="#machine"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:DatavaluedPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#hasDrilling_Capacity"/>
+                  <swrl:argument1 rdf:resource="#machine"/>
+                  <swrl:argument2 rdf:resource="#drilling_diameter"/>
+                </swrl:DatavaluedPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:BuiltinAtom>
+                      <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                      <swrl:arguments>
+                        <rdf:Description>
+                          <rdf:first rdf:resource="#diameter"/>
+                          <rdf:rest>
+                            <rdf:Description>
+                              <rdf:first rdf:resource="#drilling_diameter"/>
+                              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                          </rdf:rest>
+                        </rdf:Description>
+                      </swrl:arguments>
+                    </swrl:BuiltinAtom>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#recommendedMachine"/>
+          <swrl:argument1 rdf:resource="#hole"/>
+          <swrl:argument2 rdf:resource="#machine"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recommended Machine</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Milling_Machine"/>
+          <swrl:argument1 rdf:resource="#machine"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#hasOuter_Diameter"/>
+              <swrl:argument1 rdf:resource="#piece"/>
+              <swrl:argument2 rdf:resource="#outerDiameter"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:DatavaluedPropertyAtom>
+                  <swrl:propertyPredicate rdf:resource="#hasDrilling_Capacity"/>
+                  <swrl:argument1 rdf:resource="#machine"/>
+                  <swrl:argument2 rdf:resource="#drillingCapacity"/>
+                </swrl:DatavaluedPropertyAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:BuiltinAtom>
+                      <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                      <swrl:arguments>
+                        <rdf:Description>
+                          <rdf:first rdf:resource="#drillingCapacity"/>
+                          <rdf:rest>
+                            <rdf:Description>
+                              <rdf:first rdf:resource="#outerDiameter"/>
+                              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                          </rdf:rest>
+                        </rdf:Description>
+                      </swrl:arguments>
+                    </swrl:BuiltinAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:DatavaluedPropertyAtom>
+                          <swrl:propertyPredicate rdf:resource="#hasAngle"/>
+                          <swrl:argument1 rdf:resource="#piece"/>
+                          <swrl:argument2 rdf:resource="#angle"/>
+                        </swrl:DatavaluedPropertyAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                              <swrl:propertyPredicate rdf:resource="#hasTilt_Capacity"/>
+                              <swrl:argument1 rdf:resource="#machine"/>
+                              <swrl:argument2 rdf:resource="#tiltCapacity"/>
+                            </swrl:DatavaluedPropertyAtom>
+                          </rdf:first>
+                          <rdf:rest>
+                            <swrl:AtomList>
+                              <rdf:first>
+                                <swrl:BuiltinAtom>
+                                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                  <swrl:arguments>
+                                    <rdf:Description>
+                                      <rdf:first rdf:resource="#tiltCapacity"/>
+                                      <rdf:rest>
+                                        <rdf:Description>
+                                          <rdf:first rdf:resource="#angle"/>
+                                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                        </rdf:Description>
+                                      </rdf:rest>
+                                    </rdf:Description>
+                                  </swrl:arguments>
+                                </swrl:BuiltinAtom>
+                              </rdf:first>
+                              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </swrl:AtomList>
+                          </rdf:rest>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="#recommendedMachine"/>
+          <swrl:argument1 rdf:resource="#piece"/>
+          <swrl:argument2 rdf:resource="#machine"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drilling Capacity</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+</swrl:Imp>
+
+
+</rdf:RDF>

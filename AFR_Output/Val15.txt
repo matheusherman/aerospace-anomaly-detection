@@ -1,0 +1,10 @@
+Part name: Val15
+Part thickness is: 1.5 mm
+
+web (ID: 1; Position point:(4.5,0,0); Position normal:(0,-1,0))
+attachment flange (ID: 2; Parent ID: 1; Width: 25 mm; Length: 15 mm; Bend radius: 3 mm; Type: Down, Single, Immediate, Planar, Perpendicular; Position point:(-0,12,0); Position normal:(-1,0,0))
+attachment flange (ID: 3; Parent ID: 2; Width: 25 mm; Length: 20 mm; Bend radius: 3 mm; Type: Up, Single, Return, Planar, Perpendicular; Position point:(-20,15,0); Position normal:(0,-1,0))
+corner (ID: 4; Parent ID: 3; Radius: 7.5 mm)
+corner (ID: 5; Parent ID: 3; Radius: 7.5 mm)
+attachment hole (ID: 7; Parent ID: 3; Diameter: 4 mm; Position point:(-12.5,15,5); Position normal:(0,1,0))
+attachment hole (ID: 6; Parent ID: 1; Diameter: 3 mm; Position point:(27,0,-0); Position normal:(0,1,0))

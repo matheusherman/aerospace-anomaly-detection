@@ -1,0 +1,14 @@
+Part name: Val29_edit
+Part thickness is: 1.19911 mm
+
+web (ID: 1; Position point:(5330.44,-289.574,1684.3); Position normal:(0.436,0.848,-0.301))
+attachment flange (ID: 2; Parent ID: 1; Width: 37.53 mm; Length: 1.52306e+06 mm; Bend radius: 5 mm; Type: Down, Single, Immediate, Planar, Open; Position point:(5274.05,-219.379,1751.51); Position normal:(-0.818,0,0.576))
+attachment flange (ID: 4; Parent ID: 2; Width: 22.4 mm; Length: 24.01 mm; Bend radius: 5 mm; Type: Down, Single, Return, Planar, Perpendicular; Position point:(5258.84,-221.266,1729.91); Position normal:(-0.576,0.006,-0.818))
+corner (ID: 6; Parent ID: 4; Radius: 11 mm)
+corner (ID: 7; Parent ID: 4; Radius: 11 mm)
+tooling hole (ID: 10; Parent ID: 4; Diameter: 10 mm; Position point:(5270.71,-217.173,1721.58); Position normal:(-0.576,0.006,-0.818))
+corner (ID: 5; Parent ID: 2; Radius: 2.5 mm)
+attachment flange (ID: 3; Parent ID: 1; Width: 22 mm; Length: 25.89 mm; Bend radius: 5 mm; Type: Up, Single, Immediate, Planar, Open; Position point:(5312.79,-259.746,1724.23); Position normal:(0.805,-0.199,-0.559))
+corner (ID: 8; Parent ID: 3; Radius: 11 mm)
+corner (ID: 9; Parent ID: 3; Radius: 11 mm)
+tooling hole (ID: 11; Parent ID: 3; Diameter: 5.1 mm; Position point:(5308.7,-283.808,1726.91); Position normal:(0.805,-0.199,-0.559))
