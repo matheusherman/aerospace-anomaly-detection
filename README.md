@@ -1,46 +1,42 @@
-## README
+**Thesis Title:** Interoperable System for Anomaly Detection in Manufacturing Processes in the Aerospace Industry Using Machine Learning
 
-**Título do TCC:** Sistema Interoperável para Identificação de
-Anomalias em Processos de Manufatura na Indústria
-Aeroespacial Usando Aprendizado de Máquina
+**Author:** Matheus Herman
 
-**Autor:** Matheus Herman
+**Summary:**
 
-**Resumo:**
+This repository contains the source code, data, and other materials required to run the software.
 
-Este repositório contém o código-fonte, dados e outros materiais relacionados para execução do software.
+**Repository Structure:**
 
-**Estrutura do Repositório:**
+* `README.md`: This file
+* `stp_files`: Folder containing the STP files for conversion
+* `AFR_output`: Folder containing the converted TXT files
+* `AFR_Script`: C++ script for .STP → .TXT conversion
+* `KNN.py`: Code for model training and anomaly detection
+* `conversor.py`: Script to call the data conversion functions (STP → TXT)
+* `extract_and_insert.py`: Functions for extracting and inserting data into the ontology
+* `utils.py`: Common utility functions for the software
+* `dev_TCC.owl`: OWL ontology containing geometric features of the parts
+* `main.py`: Main script for running the software, including the user interface
 
-* `README.md`: Este arquivo
-* `stp_files`: Pasta contendo os arquivos STP para conversão
-* `AFR_output`: Pasta contendo os arquivos TXT convertidos
-* `AFR_Script`: Script em C++ para conversão .STP -> .TXT
-* `KNN.py`: Código de treinamento do modelo e detecção de anomalias
-* `conversor.py`: Código para chamar as funções de conversão de dados stp -> txt
-* `extract_and_insert.py`: Funções de coleta e inserção dos dados na ontologia
-* `utils.py`: Funções comuns para funcionamento do software
-* `dev_TCC.owl`: Ontologia OWL contendo características geométricas das peças
-* `main.py`: Código fonte para execução do software, contendo a interface
-  
-**Como utilizar:**
+**How to Use:**
 
-Para utilizar este repositório, você deve:
+To use this repository, follow these steps:
 
-* Clonar o repositório para o seu computador:
+* Clone the repository to your computer:
 
 ```
 git clone https://github.com/matheusherman/TCC.git
 ```
 
-* Instalar as dependências:
-  
+* Install the dependencies:
+
 ```
 pip install -r requirements.txt
 ```
 
-* Executar o main.py:
-  
+* Run the main script:
+
 ```
 python3 main.py
 ```
